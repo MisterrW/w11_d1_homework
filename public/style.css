@@ -1,18 +1,20 @@
-.flexy {
-   display: -webkit-flex;
-   display: flex;
+body {
+  font-family: sans-serif;
+  background-color: white;
 }
 
 #cats {
-  display: -webkit-flex;
   display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
+.cat {
+  width: 300px;
+  height: 200px;
 }
 
-.red-quote{
-  color: red;
+img {
+  border-radius: 5px;
 }
