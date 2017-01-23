@@ -1,3 +1,14 @@
+var catBuilder = function(){
+  var cats = [{name: "Boba", food: "Sock fluff", imgUrl: "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg"},
+  {name: "Barnaby", food: "Tuna", imgUrl: "http://www.gordonrigg.com/the-hub/wp-content/uploads/2015/06/little_cute_cat_1920x1080.jpg"},
+  {name: "Max", food: "Whiskas Temptations", imgUrl: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg"},
+  {name: "Maurice the Merciless", food: "Birds and other Small Animals", imgUrl: "http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg"}
+  ];
+  for(var cat of cats){
+    addCat(cat.name, cat.food, cat.imgUrl);
+  }
+}
+
 var createCat = function(){
   var cat = document.createElement('ul');
   cat.classList.add('cat');
@@ -42,13 +53,7 @@ var addCat = function(name, food, imgUrl){
 }
 
 var app = function(){
-  var cats = [{name: "Dibble", food: "Tuna Chunks", imgUrl: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg"},
-  {name: "Fred", food: "bits of stuff", imgUrl: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg"},
-  {name: "Maurice the Merciless", food: "Birds and other Small Animals", imgUrl: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg"}
-  ];
-  for(var cat of cats){
-    addCat(cat.name, cat.food, cat.imgUrl);
-  }
+  catBuilder();
 }
 
 window.onload = app;
