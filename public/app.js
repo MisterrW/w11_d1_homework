@@ -18,7 +18,7 @@ var createCat = function(){
 var createImg = function(imgUrl){
   var img = document.createElement('img');
   img.src = imgUrl;
-  img.width = "500";
+  img.width = "180";
   return img;
 }
 

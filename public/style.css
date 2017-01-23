@@ -1,3 +1,13 @@
+.flexy {
+   display: -webkit-flex;
+   display: flex;
+}
+
+#cats {
+  display: -webkit-flex;
+  display: flex;
+}
+
 .logo {
   width: 50px;
   height: 50px;
